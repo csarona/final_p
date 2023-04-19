@@ -1,0 +1,132 @@
+*{
+    background-color: #D7F9F8;
+}
+
+.intro p{
+    margin: 20px 0px 20px 0px;
+}
+.intro h1, .intro p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/* style nav */
+.active{
+    background-color: #D7F9F8;
+    border: solid 3px white;
+    text-decoration: underline;
+}
+nav li{
+    display:inline;
+    padding-right:20px;
+    background-color: #2b7472;
+    padding: 0px 10px 0px 10px;
+  
+}
+/* style nav */
+nav ul{
+    display: flex;
+    background-color: #2b7472;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+/* style nav */
+nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+/* style nav */
+nav{
+    background-color: #2b7472;
+    padding: 25px 0; 
+    text-align: left;
+
+}
+
+/* add focus on nav */
+nav a:focus, nav a:hover {
+    background-color: #D7F9F8;
+    border: solid 3px white;
+    padding: 20px;
+}
+/* .intro h1, .intro p{
+    display: flex;
+    justify-content: center;
+} */
+h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+.skip a { 
+    position: absolute;
+    top: -40px;
+}
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+}
+footer{
+    color: white;
+    background-color: #2b7472;
+  
+}
+footer a{
+    color: white;
+}
+footer a:hover, footer a:focus{
+    border: solid 2px white;
+    padding: 10px;
+}
+.images ol{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 100px;
+    
+}
+img{
+    width: 60%;
+}
+@media screen and (min-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+    nav ul{
+        justify-content: flex-start;
+    }
+    .images{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .pixar{
+        grid-column: 3/span 1;
+    }
+}
+@media screen and (min-width: 800px) {
+    nav ul{
+        justify-content: flex-end;
+    }
+    h1{
+        font-size: 32px;
+        
+    }
+   
+}
